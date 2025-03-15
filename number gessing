@@ -1,0 +1,18 @@
+import random
+create_or_access = input("(1)create a file or (2)access a file?")
+l = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","m","o","p","q","r","s","t","u","v","w","x","y","z"]
+random.shuffle(l)
+t = l[1]+l[2]+l[3]+l[4]
+if create_or_access == "1":
+    file = open(t,"x")
+    print("file created")
+    text_in_file = input("Enter text that will be in this file:")
+
+    f=open(t,"a")
+    f.write(text_in_file)
+    f.close()
+else:
+    filename = input("Enter name of file to open:")
+    file = open(notesapp.py,"r")
+    print(file.read())
+    file.closed()
